@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKScriptMessageHandler {
 
+    var webView: WKWebView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        connectWeb()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func connectWeb(){
+        let bridge = BridgeAngular()
+        let theWebView = bridge.initWeb(self)
+        self.view.addSubview(theWebView!)
+        self.webView = theWebView?
+    }
+    
+    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage
+        message: WKScriptMessage){
+            println(message.body);
+    }
 }
 

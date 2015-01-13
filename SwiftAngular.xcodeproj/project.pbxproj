@@ -13,6 +13,15 @@
 		113004B11A5F79A40051B5D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113004B01A5F79A40051B5D2 /* Images.xcassets */; };
 		113004B41A5F79A40051B5D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113004B21A5F79A40051B5D2 /* LaunchScreen.xib */; };
 		113004C01A5F79A40051B5D2 /* SwiftAngularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113004BF1A5F79A40051B5D2 /* SwiftAngularTests.swift */; };
+		113004CA1A5F7E270051B5D2 /* BridgeToAngular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113004C91A5F7E270051B5D2 /* BridgeToAngular.swift */; };
+		115AB7AA1A63D0D30093CF46 /* angular-route.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A21A63D0D30093CF46 /* angular-route.min.js */; };
+		115AB7AB1A63D0D30093CF46 /* angular.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A31A63D0D30093CF46 /* angular.min.js */; };
+		115AB7AC1A63D0D30093CF46 /* bootstrap.css in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A41A63D0D30093CF46 /* bootstrap.css */; };
+		115AB7AD1A63D0D30093CF46 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A51A63D0D30093CF46 /* index.html */; };
+		115AB7AE1A63D0D30093CF46 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A61A63D0D30093CF46 /* index.js */; };
+		115AB7AF1A63D0D30093CF46 /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A71A63D0D30093CF46 /* main.html */; };
+		115AB7B01A63D0D30093CF46 /* mainCtrl.js in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A81A63D0D30093CF46 /* mainCtrl.js */; };
+		115AB7B11A63D0D30093CF46 /* mainService.js in Resources */ = {isa = PBXBuildFile; fileRef = 115AB7A91A63D0D30093CF46 /* mainService.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		113004B91A5F79A40051B5D2 /* SwiftAngularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAngularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113004BE1A5F79A40051B5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113004BF1A5F79A40051B5D2 /* SwiftAngularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAngularTests.swift; sourceTree = "<group>"; };
+		113004C91A5F7E270051B5D2 /* BridgeToAngular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeToAngular.swift; sourceTree = "<group>"; };
+		115AB7A21A63D0D30093CF46 /* angular-route.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "angular-route.min.js"; path = "SwiftAngular/tmp/angular-route.min.js"; sourceTree = SOURCE_ROOT; };
+		115AB7A31A63D0D30093CF46 /* angular.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = angular.min.js; path = SwiftAngular/tmp/angular.min.js; sourceTree = SOURCE_ROOT; };
+		115AB7A41A63D0D30093CF46 /* bootstrap.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = bootstrap.css; path = SwiftAngular/tmp/bootstrap.css; sourceTree = SOURCE_ROOT; };
+		115AB7A51A63D0D30093CF46 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = SwiftAngular/tmp/index.html; sourceTree = SOURCE_ROOT; };
+		115AB7A61A63D0D30093CF46 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = SwiftAngular/tmp/index.js; sourceTree = SOURCE_ROOT; };
+		115AB7A71A63D0D30093CF46 /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = main.html; path = SwiftAngular/tmp/main.html; sourceTree = SOURCE_ROOT; };
+		115AB7A81A63D0D30093CF46 /* mainCtrl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = mainCtrl.js; path = SwiftAngular/tmp/mainCtrl.js; sourceTree = SOURCE_ROOT; };
+		115AB7A91A63D0D30093CF46 /* mainService.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = mainService.js; path = SwiftAngular/tmp/mainService.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +95,14 @@
 		113004A61A5F79A40051B5D2 /* SwiftAngular */ = {
 			isa = PBXGroup;
 			children = (
+				113004D71A5FC4290051B5D2 /* tmp */,
 				113004A91A5F79A40051B5D2 /* AppDelegate.swift */,
 				113004AB1A5F79A40051B5D2 /* ViewController.swift */,
 				113004AD1A5F79A40051B5D2 /* Main.storyboard */,
 				113004B01A5F79A40051B5D2 /* Images.xcassets */,
 				113004B21A5F79A40051B5D2 /* LaunchScreen.xib */,
 				113004A71A5F79A40051B5D2 /* Supporting Files */,
+				113004C91A5F7E270051B5D2 /* BridgeToAngular.swift */,
 			);
 			path = SwiftAngular;
 			sourceTree = "<group>";
@@ -110,6 +130,22 @@
 				113004BE1A5F79A40051B5D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113004D71A5FC4290051B5D2 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				115AB7A21A63D0D30093CF46 /* angular-route.min.js */,
+				115AB7A31A63D0D30093CF46 /* angular.min.js */,
+				115AB7A41A63D0D30093CF46 /* bootstrap.css */,
+				115AB7A51A63D0D30093CF46 /* index.html */,
+				115AB7A61A63D0D30093CF46 /* index.js */,
+				115AB7A71A63D0D30093CF46 /* main.html */,
+				115AB7A81A63D0D30093CF46 /* mainCtrl.js */,
+				115AB7A91A63D0D30093CF46 /* mainService.js */,
+			);
+			name = tmp;
+			path = web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +228,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115AB7AF1A63D0D30093CF46 /* main.html in Resources */,
+				115AB7AD1A63D0D30093CF46 /* index.html in Resources */,
+				115AB7AB1A63D0D30093CF46 /* angular.min.js in Resources */,
 				113004AF1A5F79A40051B5D2 /* Main.storyboard in Resources */,
+				115AB7AE1A63D0D30093CF46 /* index.js in Resources */,
 				113004B41A5F79A40051B5D2 /* LaunchScreen.xib in Resources */,
 				113004B11A5F79A40051B5D2 /* Images.xcassets in Resources */,
+				115AB7B11A63D0D30093CF46 /* mainService.js in Resources */,
+				115AB7AC1A63D0D30093CF46 /* bootstrap.css in Resources */,
+				115AB7B01A63D0D30093CF46 /* mainCtrl.js in Resources */,
+				115AB7AA1A63D0D30093CF46 /* angular-route.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113004CA1A5F7E270051B5D2 /* BridgeToAngular.swift in Sources */,
 				113004AC1A5F79A40051B5D2 /* ViewController.swift in Sources */,
 				113004AA1A5F79A40051B5D2 /* AppDelegate.swift in Sources */,
 			);
@@ -339,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAngular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAngular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +454,7 @@
 				113004C51A5F79A40051B5D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		113004C61A5F79A40051B5D2 /* Build configuration list for PBXNativeTarget "SwiftAngularTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +463,7 @@
 				113004C81A5F79A40051B5D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
